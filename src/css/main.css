@@ -5,7 +5,6 @@
 @import "imports/home-below.css";
 @import "imports/form.css";
 @import "imports/foot.css";
-
 :root {
   --font-sans: 'Fira Sans', sans-serif;
   --font-serif: 'Playfair Display', serif;
@@ -27,8 +26,14 @@ body {
   color: var(--color-black);
   margin: 0 auto;
   /* overflow-x: hidden; */
-  @media (min-width: 128px) {
+  @media (min-width: 71.25em) {
     overflow-x: hidden;
+  }
+  @media (min-width: 71.25em) {
+    overflow-x: hidden;
+  }
+  @media (min-width: 87.5em) {
+    font-size: 1.25em;
   }
 }
 
@@ -45,12 +50,15 @@ a {
   text-decoration: none;
   transition: all 0.2s ease;
 }
-a:hover{
+
+a:hover {
   color: var(--color-pink);
 }
-a:active{
+
+a:active {
   color: var(--color-pink-dark1);
 }
+
 /* *:focus {
   outline: solid 2px var(--color-blue);
 } */

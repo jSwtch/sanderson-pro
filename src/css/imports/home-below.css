@@ -2,11 +2,21 @@
 
 #about {
   min-height: calc(1.25em*24);
-  padding-bottom: calc(1.25em*2);
+  @media (min-width: 42.5) {
+    padding-bottom: calc(1.25em*1);
+  }
+}
+
+.info--hi {
+  /* margin-bottom: calc(1.25em*1); */
 }
 
 .content {
   grid-column: 2 / span 4;
+}
+
+.content--top {
+  grid-column: 2 / span 5;
 }
 
 .img--smiler {
@@ -20,11 +30,12 @@
 
 .img--smiler:hover {
   width: calc(1.25em*2.8);
-  transform: translateY(-150%);
+  top: calc(-1.25em*.15);
   transform: rotateZ(5deg);
 }
 
 .hover-box .img--smiler__text {
+  position: relative;
   opacity: 0;
   transition: all .3s ease;
 }
@@ -34,25 +45,26 @@
 }
 
 .img--hi {
+  position: absolute;
   width: calc(1.25em*2.18);
-}
-
-#contact {
-  min-height: calc(1.25em*18);
-  padding-bottom: calc(1.25em*2);
+  bottom: calc(1.25em*.85);
 }
 
 p {
   font-family: var(--font-sans);
-  font-size: calc(1.25em);
-  line-height: calc(1.25em*2);
+  font-size: calc(1.25em*.75);
+  line-height: calc(1.25em*1.5);
+  @media (min-width: 42.5em) {
+    font-size: calc(1.25em);
+    line-height: calc(1.25em*2);
+  }
 }
 
 p:nth-child(n) {
   padding-top: calc(1.25em*.5);
 }
 
-p:nth-child(1) {
-  padding-top: 0px;
-  margin-top: calc(-1.25em*2.18);
+#contact {
+  min-height: calc(1.25em*18);
+  padding-bottom: calc(1.25em*2);
 }

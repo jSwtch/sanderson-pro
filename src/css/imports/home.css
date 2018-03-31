@@ -2,7 +2,10 @@
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr 5fr;
+  grid-template-columns: 1fr 5fr;
+  @media (min-width: 71.25em) {
+    grid-template-columns: 2fr 5fr;
+  }
 }
 
 .bar {
@@ -23,7 +26,10 @@
 .main--6 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 30px;
+  grid-column-gap: 24px;
+  @media (min-width: 71.25em) {
+    grid-column-gap: 30px;
+  }
 }
 
 .main--7 {
@@ -32,14 +38,21 @@
 }
 
 .button--location {
-  grid-column: 3 / span 1;
+  grid-column: 2 / span 3;
+  @media (min-width: 42.5em) {
+    grid-column: 3 / span 1;
+  }
 }
 
 .contact {
-  grid-column: 3 / span 1;
+  grid-column: 2 / span 3;
   width: 100%;
   font-family: var(--font-sans);
   font-size: calc(1.25em*1);
   padding: calc(1.25em*0.25) 0;
   margin: calc(1.25em*2) 0;
+
+  @media (min-width: 42.5em) {
+    grid-column: 3 / span 1;
+  }
 }

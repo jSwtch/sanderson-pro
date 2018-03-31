@@ -4,9 +4,12 @@
 }
 
 .info {
-  grid-column: 2 / span 2;
+  grid-column: 2 / span 4;
   margin: calc(1.25em*1.8*2) 0 calc(1.25em*.5) 0;
   font-family: var(--font-sans);
+  @media (min-width: 53.75em) {
+    grid-column: 2 / span 2;
+  }
 }
 
 .info--bold {
@@ -24,42 +27,68 @@
 }
 
 .services--main {
-  grid-column: 2 / span 5;
+  position: relative;
+  grid-column: 1 / span 6;
   grid-row: 1;
   margin: calc(1.25em*2.5) 0 calc(1.25em*1) 0;
+  @media (min-width: 42.5em) {
+    grid-column: 2 / span 5;
+  }
 }
 
 .services--main h2 {
   font-family: var(--font-sans);
-  font-size: calc(1.25em*4.5);
+  font-size: calc(1.25em*3);
   font-weight: 700;
   margin-top: calc(-1.25em*.25);
   z-index: 1;
+  @media (min-width: 53.75em) {
+    font-size: calc(1.25em*4.5);
+  }
 }
 
-.ampersand  {
+.ampersand {
   font-size: calc(1.25em*2);
   position: relative;
-  left: calc(1.25em*10);
-  bottom: calc(1.25em*1.45);
+  left: calc(1.25em*6.65);
+  bottom: calc(1.25em*1.48);
   margin-bottom: calc(-1.25em*2);
   color: rgba(139, 143, 152, .5);
   z-index: -1;
+  @media (min-width: 53.75em) {
+    font-size: calc(1.25em*2);
+    left: calc(1.25em*10);
+    bottom: calc(1.25em*1.45);
+  }
 }
 
 .services {
   font-family: var(--font-sans);
   font-size: calc(1.25em*1);
   font-weight: 300;
+}
 
+.main--6__services {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 0px;
+  @media (min-width: 42.5em) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+  }
 }
 
 .services--left {
-  grid-column: 2 / span 2;
+  grid-column: 2 / span 3;
+  @media (min-width: 42.5em) {
+    grid-column: 2 / span 2;
+  }
 }
 
 .services--right {
-  grid-column: 4 / span 2;
+  grid-column: 2 / span 3;
+  @media (min-width: 42.5em) {
+    grid-column: 4 / span 2;
+  }
 }
 
 .img--circle {
@@ -77,6 +106,13 @@
 .hover-box:hover .img--circle__tooltip {
   opacity: 1;
 }
+
+.hover-box:active .img--circle__tooltip {
+  /* filter: saturate(80%) brightness(80%); */
+  /* filter: hue-rotate(90deg); */
+  opacity: .6;
+}
+
 .hover-box:active .img--circle__tooltip {
   /* filter: saturate(80%) brightness(80%); */
   /* filter: hue-rotate(90deg); */

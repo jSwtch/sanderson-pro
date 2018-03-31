@@ -2,6 +2,10 @@ footer {
   height: calc(1.25em*1.8*6);
   background: var(--color-black);
   grid-column: 1 / span 7;
+  font-size: .75em;
+  @media (min-width: 42.5em) {
+    font-size: 1em;
+  }
 }
 
 .social--foot {

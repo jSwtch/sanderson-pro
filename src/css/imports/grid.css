@@ -4,10 +4,6 @@
   margin: 0 auto;
 }
 
-.col1--head:nth-child(2n) {
-  background: red;
-}
-
 .col1 {
   flex: 1;
   height: 40px;
@@ -23,14 +19,16 @@
   margin: 0 auto;
 }
 
+.empty {
+  flex: 1;
+  @media (min-width: 71.25em) {
+    flex: 2;
+  }
+}
+
 .col2 {
   flex: 1;
   height: 40px;
-}
-
-.empty {
-  flex: 2;
-  width: 2fr;
 }
 
 .seen {
@@ -46,13 +44,9 @@
   height: 100%;
   width: 100%;
   margin: 0 15px;
-}
-
-.colnest--head {
-  /* background: blue; */
-  height: 100%;
-  width: 100%;
-  margin: 0 15px;
+  @media (min-width: 71.25em) {
+    margin: 0 12px;
+  }
 }
 
 .colnest:first-child {
