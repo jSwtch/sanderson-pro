@@ -1,0 +1,119 @@
+.grid1 {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.col1--head:nth-child(2n) {
+  background: red;
+}
+
+.col1 {
+  flex: 1;
+  height: 40px;
+}
+
+.col1--head {
+  background: black;
+}
+
+.grid2 {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.col2 {
+  flex: 1;
+  height: 40px;
+}
+
+.empty {
+  flex: 2;
+  width: 2fr;
+}
+
+.seen {
+  flex: 5;
+  display: flex;
+}
+
+.seen--head {
+  /* background: green; */
+}
+
+.colnest {
+  height: 100%;
+  width: 100%;
+  margin: 0 15px;
+}
+
+.colnest--head {
+  /* background: blue; */
+  height: 100%;
+  width: 100%;
+  margin: 0 15px;
+}
+
+.colnest:first-child {
+  margin-left: 0;
+}
+
+.colnest:last-child {
+  margin-right: 0;
+}
+
+.colnest:nth-child(1) {
+  /* background: #FFF; */
+  /* background: var(--color-grey); */
+}
+
+.colnest:nth-child(2) {
+  background: var(--color-black);
+}
+
+.colnest:nth-child(3) {
+  background: var(--color-yellow);
+}
+
+.colnest:nth-child(4) {
+  background: var(--color-pink);
+}
+
+.colnest:nth-child(5) {
+  /* background: #FFF; */
+  /* background: var(--color-blue); */
+}
+
+.colnest:nth-child(6) {
+  background: var(--color-blue);
+}
+
+/*
+SHOW
+ */
+
+.grid-show2 {
+  height: 40px;
+}
+
+.col1:nth-child(1) {
+  /* background: var(--color-black); */
+  /* background: #FFF; */
+}
+
+.col1:nth-child(2) {
+  background: var(--color-grey);
+}
+
+.col1:nth-child(3) {
+  background: var(--color-blue);
+}
+
+.col1:nth-child(4) {
+  background: #FFF;
+}
+
+.col1:nth-child(5) {
+  background: var(--color-black);
+}

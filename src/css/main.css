@@ -1,14 +1,56 @@
-/*
-  You can use import statements to include partials:
- */
 @import "imports/reset.css";
+@import "imports/grid.css";
+@import "imports/home.css";
+@import "imports/home-above.css";
+@import "imports/home-below.css";
+@import "imports/form.css";
+@import "imports/foot.css";
 
-
-/*
-  Or add your statements here:
- */
-body{
-  font-family: sans-serif;
-  font-size: 1em;
-  text-align: center;
+:root {
+  --font-sans: 'Fira Sans', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --color-black: #06070E;
+  --color-grey: #8B8F98;
+  --color-blue: #56CBF9;
+  --color-pink: #FF4B9B;
+  --color-pink-dark1: #BF3874;
+  --color-pink-dark2: #80264D;
+  --color-yellow: #FFE84B;
+  --color-white-cream: #FFFCF9;
+  --color-white-grey: #E3F2FD;
+  --color-white-blue: #DDF5FE;
 }
+
+body {
+  font-size: 1em;
+  background: var(--color-white-cream);
+  color: var(--color-black);
+  margin: 0 auto;
+  /* overflow-x: hidden; */
+  @media (min-width: 128px) {
+    overflow-x: hidden;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+  text-align: left;
+}
+
+a {
+  color: var(--color-pink-dark2);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+a:hover{
+  color: var(--color-pink);
+}
+a:active{
+  color: var(--color-pink-dark1);
+}
+/* *:focus {
+  outline: solid 2px var(--color-blue);
+} */

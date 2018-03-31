@@ -1,0 +1,72 @@
+form {
+  padding: 0;
+  margin: 0;
+}
+
+.form--el {
+  height: calc(1.25em*1.5);
+  width: 100%;
+  margin-top: calc(1.25em*1);
+  font-family: var(--font-serif);
+  font-size: calc(1.25em);
+  padding-left: calc(1.25em*.5);
+}
+
+.form--el:nth-child(1) {
+  margin-top: 0;
+}
+
+.form--el:nth-child(2) {
+  margin-top: 0;
+}
+
+.form--fname {
+  grid-column: 2 / span 2;
+}
+
+.form--lname {
+  grid-column: 4 / span 2;
+}
+
+.form--email {
+  grid-column: 2 / span 2;
+}
+
+.form--number {
+  grid-column: 4 / span 2;
+}
+
+.form--msg {
+  grid-column: 2 / span 4;
+  max-width: 100%;
+  min-width: 50%;
+  min-height: calc(1.25em*1.5);
+  height: auto;
+  overflow: visible;
+}
+
+.form--tooltip {
+  grid-column: 3 / span 1;
+}
+
+.img--check {
+  position: absolute;
+  width: calc(1.25em*8);
+  bottom: calc(1.25em*2);
+  left: calc(1.25em*8);
+  width: 65%;
+}
+
+.hover-box .img--check__tooltip {
+  position: relative;
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.hover-box:hover .img--check__tooltip {
+  opacity: 1;
+}
+
+.hover-box:active .img--check__tooltip {
+  opacity: .6;
+}

@@ -1,0 +1,58 @@
+.home-below {}
+
+#about {
+  min-height: calc(1.25em*24);
+  padding-bottom: calc(1.25em*2);
+}
+
+.content {
+  grid-column: 2 / span 4;
+}
+
+.img--smiler {
+  width: calc(1.25em*2.18);
+  position: relative;
+  top: calc(1.25em*.5);
+  padding-left: calc(1.25em);
+  transform: rotateZ(-10deg);
+  transition: all 0.3s ease;
+}
+
+.img--smiler:hover {
+  width: calc(1.25em*2.8);
+  transform: translateY(-150%);
+  transform: rotateZ(5deg);
+}
+
+.hover-box .img--smiler__text {
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.hover-box:hover .img--smiler__text {
+  opacity: 1;
+}
+
+.img--hi {
+  width: calc(1.25em*2.18);
+}
+
+#contact {
+  min-height: calc(1.25em*18);
+  padding-bottom: calc(1.25em*2);
+}
+
+p {
+  font-family: var(--font-sans);
+  font-size: calc(1.25em);
+  line-height: calc(1.25em*2);
+}
+
+p:nth-child(n) {
+  padding-top: calc(1.25em*.5);
+}
+
+p:nth-child(1) {
+  padding-top: 0px;
+  margin-top: calc(-1.25em*2.18);
+}

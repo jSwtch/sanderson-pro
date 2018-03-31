@@ -1,0 +1,45 @@
+.grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+
+.bar {
+  background-image: url(../texture-tny.jpg);
+}
+
+.img--overlay {
+  background: rgba(139, 143, 152, 0.94);
+  width: 100%;
+  height: 100%;
+}
+
+.main--5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.main--6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.main--7 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.button--location {
+  grid-column: 3 / span 1;
+}
+
+.contact {
+  grid-column: 3 / span 1;
+  width: 100%;
+  font-family: var(--font-sans);
+  font-size: calc(1.25em*1);
+  padding: calc(1.25em*0.25) 0;
+  margin: calc(1.25em*2) 0;
+}
