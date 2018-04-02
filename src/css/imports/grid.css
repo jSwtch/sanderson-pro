@@ -43,9 +43,13 @@
 .colnest {
   height: 100%;
   width: 100%;
-  margin: 0 15px;
-  @media (min-width: 71.25em) {
+  /* margin: 0 8px; */
+  margin: 0 12px;
+  @media (min-width: 30em) {
     margin: 0 12px;
+  }
+  @media (min-width: 71.25em) {
+    margin: 0 15px;
   }
 }
 

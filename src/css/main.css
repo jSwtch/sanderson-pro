@@ -5,6 +5,7 @@
 @import "imports/home-below.css";
 @import "imports/form.css";
 @import "imports/foot.css";
+
 :root {
   --font-sans: 'Fira Sans', sans-serif;
   --font-serif: 'Playfair Display', serif;
@@ -21,16 +22,14 @@
 }
 
 body {
-  font-size: 1em;
   background: var(--color-white-cream);
   color: var(--color-black);
   margin: 0 auto;
-  /* overflow-x: hidden; */
-  @media (min-width: 71.25em) {
-    overflow-x: hidden;
-  }
-  @media (min-width: 71.25em) {
-    overflow-x: hidden;
+  overflow-x: hidden;
+  font-size: 0.75em;
+  width: 100%;
+  @media (min-width: 30em) {
+    font-size: 1em;
   }
   @media (min-width: 87.5em) {
     font-size: 1.25em;
@@ -46,19 +45,45 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 a {
-  color: var(--color-pink-dark2);
   text-decoration: none;
-  transition: all 0.2s ease;
 }
 
-a:hover {
+input:focus {
+  outline: calc(1.25em*.2) solid var(--color-blue);
+  @media (min-width: 30em) {
+    outline: calc(1.25em*.1) solid var(--color-blue);
+  }
+}
+
+textarea:focus {
+  outline: calc(1.25em*.2) solid var(--color-blue);
+  @media (min-width: 30em) {
+    outline: calc(1.25em*.1) solid var(--color-blue);
+  }
+}
+
+.link {
+  color: var(--color-pink-dark2);
+  transition: all .2s ease;
+}
+
+.link:hover {
   color: var(--color-pink);
 }
 
-a:active {
+.link:active {
   color: var(--color-pink-dark1);
 }
 
-/* *:focus {
-  outline: solid 2px var(--color-blue);
-} */
+.link--contact, .link--social {
+  opacity: .5;
+}
+
+.link--contact:hover, .link--social:hover {
+  opacity: .8;
+}
+
+.link--contact:active, .link--social:active {
+  color: var(--color-pink);
+  opacity: .6;
+}
