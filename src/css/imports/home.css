@@ -37,12 +37,12 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.button--location {
+/* .button--location {
   grid-column: 2 / span 3;
   @media (min-width: 42.5em) {
     grid-column: 3 / span 1;
   }
-}
+} */
 
 .contact {
   grid-column: 2 / span 3;
