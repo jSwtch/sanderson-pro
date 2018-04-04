@@ -8,6 +8,12 @@
   <base href="{{ if getenv " CONTEXT " }}{{ cond (eq "production " (getenv "CONTEXT ")) (getenv "URL ") (getenv "DEPLOY_PRIME_URL ") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
   <title>{{ $.Site.Title }}</title>
 
+  <meta name="description" content="Canada's fastest growing web design and development business. We use a unique client driven approach to develop and scale projects with your input. Promo pricing is available for a limited time.">
+  <meta name="keywords" content="web design, web app, develop, branding, graphic design, business, SEO, Edmonton, Canada, best web design, top web design">
+  <meta name="robots" content="index, nofollow">
+  <meta name="web_author" content="Jonathan Sanderson">
+  <meta name="language" content="English">
+
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
